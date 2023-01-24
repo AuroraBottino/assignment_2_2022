@@ -1,7 +1,6 @@
 # RT1 - Assignment 2 - ROS Simulator 
 RT1 - Assignment 2 - ROS Simulator
-**Professor: Carmine Tommaso Recchiuto, Student: Aurora Bottino**
-Robotics Engineering
+**Professor: Carmine Tommaso Recchiuto, Student: Aurora Bottino (s4814504)
 
 # Assignment Description
 

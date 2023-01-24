@@ -14,6 +14,13 @@ Starting from the package assignment_2_2022 (https://github.com/CarmineD8/assign
 
 In addition it is required to create a launch file in order to start the whole program.
 
+#Install and run
+1) Start the master: **roscore &**
+3) Go inside the src folder of ROS workspace and clone the assignment folder: 
+4) Run the command: **catkin_make**
+5) Install: **sudo apt-get install xterm**
+6) Run: **roslaunch assignment_2_2022 assignment1.launch**
+
 # Nodes
 There are six nodes in the package:
 

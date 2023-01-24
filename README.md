@@ -13,14 +13,6 @@ Starting from the package assignment_2_2022 (https://github.com/CarmineD8/assign
 (c) A node that subscribes to the robot’s position and velocity (using the custom message) and prints the distance of the robot from the target and the robot’s average speed. Use a parameter to set how fast the node publishes the information. 
 
 In addition it is required to create a launch file in order to start the whole program.
-
-# Install and run
-1) Start the master: **roscore &**
-3) Go inside the src folder of ROS workspace and clone the assignment folder: **https://github.com/AuroraBottino/assignment_2_2022.git**
-4) Run the command: **catkin_make**
-5) Install: **sudo apt-get install xterm**
-6) Run: **roslaunch assignment_2_2022 assignment1.launch**
-
 # Nodes
 There are six nodes in the package:
 
@@ -32,11 +24,24 @@ There are six nodes in the package:
 
 and then I implemented the three nodes requested:
 
-**print_info.py**: is the node that subscribes to the robot’s position and velocity from the /Position_velocity as a custom message and prints the distance of the robot from the target and the robot’s average speed with a frequency setted as a parameter in the lauch file.
+**print_info.py**: the node that subscribes to the robot’s position and velocity from the /Position_velocity as a custom message and prints the distance of the robot from the target and the robot’s average speed with a frequency setted as a parameter in the lauch file.
 
-**service.py**: is the service node that, when called, prints the number of goals reached and cancelled
+**service.py**: the service node that prints the number of goals reached and cancelled.
 
-**user_input.py**: is the action client node, allowing the user to set a target, x and y, or to cancel it. The node also publishes the robot position and velocity as a custom message on the /Position_velocity topic, by relying on the values published on the topic /odom. The structure of the node is described in the following flowchart: 
+**user_input.py**: the action client node which allows the user to set a goal position with coordinates x and y, or to cancel it. The node also publishes the robot position and velocity as a custom message on the /Position_velocity topic, by relying on the values published on the topic /odom. The structure of the node is described in the following flowchart: 
 
+# Install and run
+1) Start the master: **roscore &**
+3) Go inside the src folder of ROS workspace and clone the assignment folder: **https://github.com/AuroraBottino/assignment_2_2022.git**
+4) Run the command: **catkin_make**
+5) Install: **sudo apt-get install xterm**
+6) Run: **roslaunch assignment_2_2022 assignment1.launch**
+If everything works correctly, the following windows will be opening:
 
+![research](https://user-images.githubusercontent.com/114871147/214268431-e0790db8-2d36-41f7-a6db-b2709b7292e8.png)
 
+plus the user_input (where the user enters the coordinates) and the print_info windows. 
+# Possible improvements:
+Some improvements that can be done are:
+1) Having a more clear view of the goal position the robot has to reach: this could be done adding a graphical marker or creating a function that allows us to recognize the size of the arena, in order to bound the coordinates. 
+2) Improving the bug0 algorithm: sometimes the robot reaches the wall and is not able to move anymore or it chooses itself which direction it's better to take to reach the goal.

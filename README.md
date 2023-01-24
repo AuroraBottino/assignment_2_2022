@@ -35,7 +35,7 @@ and then I implemented the three nodes requested:
 3) Go inside the src folder of ROS workspace and clone the assignment folder: **https://github.com/AuroraBottino/assignment_2_2022.git**
 4) Run the command: **catkin_make**
 5) Install: **sudo apt-get install xterm**
-6) Run: **roslaunch assignment_2_2022 assignment1.launch**
+6) Run: **roslaunch assignment_2_2022 assignment1.launch**.
 If everything works correctly, the following windows will be opening:
 
 ![research](https://user-images.githubusercontent.com/114871147/214268431-e0790db8-2d36-41f7-a6db-b2709b7292e8.png)

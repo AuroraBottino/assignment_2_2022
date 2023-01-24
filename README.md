@@ -30,6 +30,9 @@ and then I implemented the three nodes requested:
 
 **user_input.py**: the action client node which allows the user to set a goal position with coordinates x and y, or to cancel it. The node also publishes the robot position and velocity as a custom message on the /Position_velocity topic, by relying on the values published on the topic /odom. The structure of the node is described in the following flowchart: 
 
+![Screenshot (249)](https://user-images.githubusercontent.com/114871147/214349189-5d8343e5-db52-4ad1-9e1f-91613a416af0.png)
+
+
 # Install and run
 1) Start the master: **roscore &**
 3) Go inside the src folder of ROS workspace and clone the assignment folder: **https://github.com/AuroraBottino/assignment_2_2022.git**

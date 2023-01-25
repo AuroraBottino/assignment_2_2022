@@ -28,9 +28,9 @@ and then I implemented the three nodes requested:
 
 **service.py**: the service node that prints the number of goals reached and cancelled.
 
-**user_input.py**: the action client node which allows the user to set a goal position with coordinates x and y, or to cancel it. The node also publishes the robot position and velocity as a custom message on the /Position_velocity topic, by relying on the values published on the topic /odom. The structure of the node is described in the following flowchart: 
+**user_input.py**: the action client node which allows the user to set a goal position with coordinates x and y, or to cancel it. The node also publishes the robot position and velocity as a custom message on the /Position_velocity topic, by relying on the values published on the topic /odom. The structure of the node is described in the following flowchart:
 
-![Screenshot (249)](https://user-images.githubusercontent.com/114871147/214349189-5d8343e5-db52-4ad1-9e1f-91613a416af0.png)
+![Screenshot (250)](https://user-images.githubusercontent.com/114871147/214496968-e685a5b9-5ef7-4fc5-88f3-681b098d5e71.png)
 
 
 # Install and run
